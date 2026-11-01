@@ -19,11 +19,12 @@
         python = pkgs.python314;
         pythonEnv = python.withPackages (
           ps: with ps; [
-            pytest
             mypy
+            numba
+            pytest
+            sympy
             numpy
             scipy
-            sympy
             matplotlib
           ]
         );
